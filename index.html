@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Flashcards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,700;1,700&family=Open+Sans:ital@0;1&display=swap">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/scripts.js" defer></script>
+  </head>
+  <body class="dark">
+    <header>
+      <h1>HTML Flashcards</h1>
+      <input type="search" placeholder="Search" class="search">
+      <aside>
+        <div class="menu"><div class="menu-btn"></div></div>
+        <div class="drop-down">
+          <button type="button" id="light">Light</button>
+          <button type="button" id="dark">Dark</button>
+        </div>
+      </aside>
+    </header>
+    <main>
+      <div class="cards">
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;a&#62;</h2>
+            <h3>The Anchor Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The anchor element is used with an href attribute to create a hyperlink to web pages, files, email addresses, locations in the same page, or anything else a URL can address.</p>
+            <p>Example:</p>
+            <code>&#60;<span class="tag">a</span> <span class="attribute">href</span>=<span class="value">"https://www.example.com"</span>&#62;<span class="text">Website</span>&#60;/<span class="tag">a</span>&#62;</code>
+            <p>would appear as</p>
+            <a href="https://www.example.com" target="_blank" tabindex="-1">Website</a>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;abbr&#62;</h2>
+            <h3>The Abbreviation Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The abbreviation element is used with a title attribute to create an abbreviation or acronym with a description.</p>
+            <p>Example:</p>
+            <code>&#60;<span class="tag">abbr</span> <span class="attribute">title</span>=<span class="value">"HyperText Markup Language"</span>&#62;<span class="text">HTML</span>&#60;/<span class="tag">abbr</span>&#62;</code>
+            <p>would appear as</p>
+            <abbr title="HyperText Markup Language">HTML</abbr>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;button&#62;</h2>
+            <h3>The Button Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The button element represents a clickable button and is usually used to submit forms; however, its behavior can be altered with the type attribute.</p>
+            <p>Example:</p>
+            <code>&#60;<span class="tag">button</span> <span class="attribute">type</span>=<span class="value">"button"</span>&#62;<span class="text">Do Nothing</span>&#60;/<span class="tag">button</span>&#62;</code>
+            <p>would appear as</p>
+            <button type="button" tabindex="-1">Do Nothing</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;code&#62;</h2>
+            <h3>The Inline Code Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The code element displays its contents styled in a fashion intended to indicate that the text is a short fragment of computer code. By default, the content text is displayed using the user agent's default monospace font.</p>
+            <p>Example:</p>
+            <code>&#60;<span class="tag">code</span>&#62;<span class="text">let var = true;</span>&#60;/<span class="tag">code</span>&#62;</code>
+            <p>would appear as</p>
+            <code><span class="text">let var = true;</span></code>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;datalist&#62;</h2>
+            <h3>The Data List Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The datalist element contains a set of option elements that represent the recommended options available to choose from within other controls. Datalist elements are used alongside input elements and they connect with the id and list attributes.</p>
+            <p>Example:</p>
+            <div>
+              <code>&#60;<span class="tag">label</span> <span class="attribute">for</span>=<span class="value">"ice-cream-choice"</span>&#62;<span class="text">Choose a flavor:</span>&#60;/<span class="tag">label</span>&#62;</code><br>
+              <code>&#60;<span class="tag">input</span> <span class="attribute">list</span>=<span class="value">"ice-cream-flavors"</span> <span class="attribute">id</span>=<span class="value">"ice-cream-choice"</span>&#62;</code><br>
+              <code>&#60;<span class="tag">datalist</span> <span class="attribute">id</span>=<span class="value">"ice-cream-flavors"</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">option</span> <span class="attribute">value</span>=<span class="value">"Chocolate"</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">option</span> <span class="attribute">value</span>=<span class="value">"Mint"</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">option</span> <span class="attribute">value</span>=<span class="value">"Strawberry"</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">option</span> <span class="attribute">value</span>=<span class="value">"Vanilla"</span>&#62;</code><br>
+              <code>&#60;/<span class="tag">datalist</span>&#62;</code>
+            </div>
+            <p>would appear as</p>
+            <div>
+              <label for="ice-cream-choice">Choose a flavor:</label>
+              <input list="ice-cream-flavors" id="ice-cream-choice" tabindex="-1">
+              <datalist id="ice-cream-flavors">
+                <option value="Chocolate">
+                <option value="Mint">
+                <option value="Strawberry">
+                <option value="Vanilla">
+              </datalist>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;details&#62;</h2>
+            <h3>The Details Disclosure Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The details element creates a disclosure widget in which information is visible only when the widget is toggled into an open state. A label must be provided using the summary element.</p>
+            <p>Example:</p>
+            <div>
+              <code>&#60;<span class="tag">details</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">summary</span>&#62;<span class="text">Secret Message</span>&#60;/<span class="tag">summary</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;<span class="text">You found me!</span></code><br>
+              <code>&#60;/<span class="tag">details</span>&#62;</code>
+            </div>
+            <p>would appear as</p>
+            <div>
+              <details tabindex="-1">
+                <summary>Secret Message</summary>
+                <p>You found me!</p>
+              </details>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;em&#62;</h2>
+            <h3>The Emphasis Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The emphasis element marks text that has stress emphasis. It can be nested, with each level of nesting indicating a greater degree of emphasis. Though the emphasis element applys italic type, that is not its primary purpose and it should not be used just for styling.</p>
+            <p>Example:</p>
+            <code>&#60;<span class="tag">p</span>&#62;<span class="text">Do </span>&#60;<span class="tag">em</span>&#62;<span class="text">not</span>&#60;/<span class="tag">em</span>&#62;<span class="text"> use emphasis for italic styling.</span>&#60;/<span class="tag">p</span>&#62;</code>
+            <p>would appear as</p>
+            <p>Do <em>not</em> use emphasis for italic styling.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;fieldset&#62;</h2>
+            <h3>The Field Set Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The fieldset element is used to group several controls, such as inputs, as well as labels within a web form. It can have a nested legend element to provide a caption.</p>
+            <p>Example:</p>
+            <div>
+              <code>&#60;<span class="tag">fieldset</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">legend</span>&#62;<span class="text">Choose your favorite monster</span>&#60;/<span class="tag">legend</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span> <span class="attribute">id</span>=<span class="value">"godzilla"</span> <span class="attribute">name</span>=<span class="value">"monster"</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">label</span> <span class="attribute">for</span>=<span class="value">"godzilla"</span>&#62;<span class="text">Godzilla</span>&#60;/<span class="tag">label</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">input</span> <span class="attribute">type</span>=<span class="value">"radio</span>" <span class="attribute">id</span>=<span class="value">"mothra"</span> <span class="attribute">name</span>=<span class="value">"monster"</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">label</span> <span class="attribute">for</span>=<span class="value">"mothra"</span>&#62;<span class="text">Mothra</span>&#60;/<span class="tag">label</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span> <span class="attribute">id</span>=<span class="value">"ghidorah"</span> <span class="attribute">name</span>=<span class="value">"monster"</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">label</span> <span class="attribute">for</span>=<span class="value">"ghidorah"</span>&#62;<span class="text">Ghidorah</span>&#60;/<span class="tag">label</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">input</span> <span class="attribute">type</span>=<span class="value">"radio"</span> <span class="attribute">id</span>=<span class="value">"rodan"</span> <span class="attribute">name</span>=<span class="value">"monster"</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">label</span> <span class="attribute">for</span>=<span class="value">"rodan"</span>&#62;<span class="text">Rodan</span>&#60;/<span class="tag">label</span>&#62;</code><br>
+              <code>&#60;/<span class="tag">fieldset</span>&#62;</code>
+            </div>
+            <p>would appear as</p>
+            <div>
+              <fieldset>
+                <legend>Choose your favorite monster</legend>
+                <input type="radio" id="godzilla" name="monster" tabindex="-1">
+                <label for="godzilla">Godzilla</label>
+                <input type="radio" id="mothra" name="monster" tabindex="-1">
+                <label for="mothra">Mothra</label>
+                <input type="radio" id="ghidorah" name="monster" tabindex="-1">
+                <label for="ghidorah">Ghidorah</label>
+                <input type="radio" id="rodan" name="monster" tabindex="-1">
+                <label for="rodan">Rodan</label>
+              </fieldset>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;select&#62;</h2>
+            <h3>The Select Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The select element represents a control that provides a menu of options. It functions like a dropdown menu that allows the user to select one option.</p>
+            <p>Example:</p>
+            <div>
+              <code>&#60;<span class="tag">label</span> <span class="attribute">for</span>=<span class="value">"pet-select"</span>&#62;<span class="text">Choose a pet:</span>&#60;/<span class="tag">label</span>&#62;</code><br>
+              <code>&#60;<span class="tag">select</span> <span class="attribute">name</span>=<span class="value">"pets"</span> <span class="attribute">id</span>=<span class="value">"pet-select"</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">option</span> <span class="attribute">value</span>=<span class="value">""</span>&#62;<span class="text">--Please choose an option--</span>&#60;/<span class="tag">option</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">option</span> <span class="attribute">value</span>=<span class="value">"dog"</span>&#62;<span class="text">Dog</span>&#60;/<span class="tag">option</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">option</span> <span class="attribute">value</span>=<span class="value">"cat"</span>&#62;<span class="text">Cat</span>&#60;/<span class="tag">option</span>&#62;</code><br>
+              <code>&#160;&#160;&#160;&#160;&#60;<span class="tag">option</span> <span class="attribute">value</span>=<span class="value">"hamster"</span>&#62;<span class="text">Hamster</span>&#60;/<span class="tag">option</span>&#62;</code><br>
+              <code>&#60;/<span class="tag">select</span>&#62;</code>
+            </div>
+            <p>would appear as</p>
+            <div>
+              <label for="pet-select">Choose a pet:</label>
+              <select name="pets" id="pet-select" tabindex="-1">
+                <option value="">--Please choose an option--</option>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="hamster">Hamster</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;strong&#62;</h2>
+            <h3>The Strong Importance Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The strong element indicates that its contents have strong importance, seriousness, or urgency. Browsers typically render the contents in bold type, but it should not be used to apply bold styling.</p>
+            <p>Example:</p>
+            <code>&#60;<span class="tag">p</span>&#62;<span class="text">Use the strong element for importance </span>&#60;<span class="tag">strong</span>&#62;<span class="text">not for styling</span>&#60;/<span class="tag">strong</span>&#62;<span class="text">.</span>&#60;/<span class="tag">p</span>&#62;</code>
+            <p>would appear as</p>
+            <p>Use the strong element for importance <strong>not for styling</strong>.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;sub&#62;</h2>
+            <h3>The Subscript Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The subscript element specifies inline text which should be displayed as subscript for solely typographical reasons. Subscripts are typically rendered with a lowered baseline using smaller text.</p>
+            <p>Example:</p>
+            <code>&#60;<span class="tag">p</span>&#62;<span class="text">Everyone loves H</span>&#60;<span class="tag">sub</span>&#62;<span class="text">2</span>&#60;/<span class="tag">sub</span>&#62;<span class="text">O.</span>&#60;/<span class="tag">p</span>&#62;</code>
+            <p>would appear as</p>
+            <p>Everyone loves H<sub>2</sub>O.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="front" tabindex="0">
+            <h2>&#60;sup&#62;</h2>
+            <h3>The Superscript Tag</h3>
+          </div>
+          <div class="back" tabindex="0">
+            <p>The superscript element specifies inline text which is to be displayed as superscript for solely typographical reasons. Superscripts are usually rendered with a raised baseline using smaller text.</p>
+            <p>Example:</p>
+            <code>&#60;<span class="tag">p</span>&#62;<span class="text">2</span>&#60;<span class="tag">sup</span>&#62;<span class="text">3</span>&#60;/<span class="tag">sup</span>&#62;<span class="text"> = 8</span>&#60;/<span class="tag">p</span>&#62;</code>
+            <p>would appear as</p>
+            <p>2<sup>3</sup> = 8</p>
+          </div>
+        </div>
+      </div>
+      <div class="buttons">
+        <button type="button" id="flip">Flip All</button>
+        <button type="button" id="reset">Reset</button>
+      </div>
+    </main>
+    <footer>
+      <p>&#169; 2022 Tyler Carvalho</p>
+      <p>For more information visit <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">MDN Web Docs</a>.</p>
+    </footer>
+  </body>
+</html>
